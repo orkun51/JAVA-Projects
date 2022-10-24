@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[]) throws Exception {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+        Scanner keyboard = new Scanner(System.in);
+        
+        int total;
+        
+        total= keyboard.nextInt();
+        
+        int hours = total / 60;
+        
+        int minutes= total % 60;
+        
+        System.out.println("Hourse: "+ hours);
+        System.out.println("Minutes: " + minutes);
+    }
+}
