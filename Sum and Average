@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[]) throws Exception {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+        Scanner keyboard=new Scanner(System.in);
+        
+        double one = keyboard.nextDouble();
+        double two =keyboard.nextDouble();
+        double three = keyboard.nextDouble();
+        double four = keyboard.nextDouble();
+        double five = keyboard.nextDouble();
+        
+        double sum = (one+two+three+four+five);
+        double average = (one+two+three+four+five)/5;
+        
+        System.out.println("The sum of marks: " + sum);
+        System.out.println("The average marks: " + average);
+    }
+}
