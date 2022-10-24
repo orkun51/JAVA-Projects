@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[]) throws Exception 
+    {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+        Scanner sc = new Scanner(System.in);
+        
+        double salary =sc.nextDouble();
+        
+        double incomeTax = (salary * 15.0)/100.0;
+        double sgkPremium = (salary * 8.0)/100.0;
+        
+        double salary1= salary-incomeTax ;
+        double salary2 = salary1 - sgkPremium;
+        
+        double retirement = (salary2 * 20.0)/100.0;
+        
+        double netIncome = salary2 - retirement;
+        
+        System.out.println("Income tax: " + incomeTax );
+        System.out.println("SGK premium: " + sgkPremium);
+        System.out.println("Retirement benefits deduction: " + retirement);
+        System.out.println("Net income: " + netIncome);
+        
+    }
+}
