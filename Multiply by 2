@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[]) throws Exception {
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+        
+        // This question is already solved... 
+        
+        Scanner sc = new Scanner(System.in); // It's use to get input from keyboard
+        int x = sc.nextInt(); // Get an integer input from user... 
+        int y = x*2;          // multiply the input with 2, and store the result in res variable.
+        System.out.println(y); // Print the result to screen.
+    }
+}
