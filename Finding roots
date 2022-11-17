@@ -1,0 +1,57 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[]) throws Exception {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+        Scanner sc = new Scanner(System.in);
+        
+        int a = sc.nextInt();
+        int b= sc.nextInt();
+        int c =sc.nextInt();
+        
+        double x1 = (-b + Math.sqrt(b*b-4*a*c))/(2*a);
+        double x2 = (-b - Math.sqrt(b*b-4*a*c))/(2*a);
+        
+        if (x1 == x2 && x1>0 && x2>0)
+        {
+            System.out.println("Roots are same.");
+            System.out.println("Roots: " + (int)x1);
+            System.out.println("Both are positive.");
+        }
+        else if (x1 != x2 && x1>0 && x2>0)
+        {
+            System.out.println("Roots are different.");
+            System.out.println("Roots: " + (int)x2+ ", "+ (int)x1);
+            System.out.println("Both are positive.");
+        }
+        else if (x1 != x2 && x1>0 && x2<0)
+        {
+            System.out.println("Roots are different.");
+            System.out.println("Roots: " + (int)x2+ ", "+ (int)x1);
+            System.out.println("One is negative, the other is positive.");
+        }
+         else if (x1 != x2 && x1<0 && x2>0)
+        {
+            System.out.println("Roots are different.");
+            System.out.println("Roots: " + (int)x2+ ", "+ (int)x1);
+            System.out.println("One is negative, the other is positive.");
+        }
+        else if (x1 != x2 && x1<0 && x2<0)
+        {
+            System.out.println("Roots are different.");
+            System.out.println("Roots: " + (int)x2+ ", "+ (int)x1);
+            System.out.println("Both are negative.");
+        }
+        else if (x1 == x2 && x1<0 && x2<0)
+        {
+            System.out.println("Roots are same.");
+            System.out.println("Roots: " + (int)x2);
+            System.out.println("Both are negative.");
+        }
+        
+    }
+}
