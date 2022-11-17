@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[]) throws Exception {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+        Scanner sc = new Scanner(System.in);
+        
+        double x = sc.nextDouble();
+        double y = sc.nextDouble();
+        
+        if(x>0 && y>0)
+            System.out.println("In Quadrant 1");
+        if(x<0 && y>0)
+            System.out.println("In Quadrant 2");
+        if(x<0 && y<0)
+            System.out.println("In Quadrant 3");
+        if(x>0 && y<0)
+            System.out.println("In Quadrant 4");
+        
+    }
+}
