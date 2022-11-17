@@ -1,0 +1,41 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[]) throws Exception {
+        /* Enter your coDe here. ReaD input from STDIN. PrDouble output to STDOUT */
+        Scanner sc = new Scanner(System.in);
+        
+        double x1 = sc.nextDouble();
+        double y1 = sc.nextDouble();
+        double x2 = sc.nextDouble();
+        double y2 = sc.nextDouble();
+        double x3 = sc.nextDouble();
+        double y3 = sc.nextDouble();
+        double x4 = sc.nextDouble();
+        double y4 = sc.nextDouble();
+        
+        double edge1 =((Math.abs(y2-y1) * (Math.abs(y2-y1)) +(Math.abs(x2-x1)*Math.abs(x2-x1))));
+        double edge2 =((Math.abs(y3-y2) * (Math.abs(y3-y2)) +(Math.abs(x3-x2)*Math.abs(x3-x2))));
+        double edge3 =((Math.abs(y4-y3) * (Math.abs(y4-y3)) +(Math.abs(x4-x3)*Math.abs(x4-x3))));
+        double edge4 =((Math.abs(y4-y1) * (Math.abs(y4-y1)) +(Math.abs(x4-x1)*Math.abs(x4-x1))));
+
+        double edge11 = Math.sqrt(edge1);
+        double edge22 = Math.sqrt(edge2);
+        double edge33 = Math.sqrt(edge3);
+        double edge44 = Math.sqrt(edge4);
+                              
+                        
+        if (edge11 == edge22 && edge11 == edge33 && edge11 == edge44)
+        {
+            System.out.println(true);
+        }
+        else
+        {
+            System.out.println(false);
+        }
+    }
+}
