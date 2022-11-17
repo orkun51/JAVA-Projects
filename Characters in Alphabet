@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[]) throws Exception {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+        
+       Scanner sc = new Scanner(System.in);
+       
+        char ch;
+        
+        ch=sc.next().charAt(0);
+        
+        if((ch>='A' && ch<= 'Z') || (ch>= 'a' && ch<='z'))
+        {
+            System.out.println(true);
+        }
+        else
+            System.out.println(false);
+         
+    }
+}
