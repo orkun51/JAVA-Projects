@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static void main(String args[]) throws Exception {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+        Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine();
+        String str1 = "RED";
+        String str2 = "YELLOW";
+        String str3 = "GREEN";
+        
+        if(str1.equals(a))
+            System.out.println("Vehicles must stop");
+        else if(str2.equals(a))
+            System.out.println("Vehicles should get ready to move");
+        else if(str3.equals(a))
+            System.out.println("Vehicles can move");
+    }
+}
